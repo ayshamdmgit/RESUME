@@ -1,0 +1,238 @@
+%-------------------------
+% Resume in Latex
+% Author : Aysha M.Machingara
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Aysha M. Machingara} \\ \vspace{1pt}
+    \small 412-708-8419 $|$ \small Chicago, USA $|$ \href{mailto:x@x.com}{\underline{ayshamdm@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ayshamdm}{\underline{LinkedIn}} $|$
+    \href{https://github.com/ayshamdmgit}{\underline{Github}} $|$
+    \href{https://quora.com/profile/Aysha-M-Machingara}{\underline{Quora}}
+\end{center}
+
+
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {IBM}{Sep. 2019 -- Present}
+      {Data Scientist}{Financial Services Chicago, IL/ NYC, NY}
+      \resumeItemListStart
+        \resumeItem{\textbf{COVID Recovery Index:} Developed COVID impact planning strategy for fortune 50 automobile insurer in the US by predicting the impact of COVID on driving at a county level with a MAPE of 10\% for 500 large US counties. Used ping data from cellphones and other socio-economic and epidemiological variables. Predicted the Unemployment rate using google trends on unemployments claims with 15\% MAPE for 35 states. Formulated metrics and built a real-time dashboard for consumption by over 100 members and presented insights to CTO}
+        
+        {\textit{Technology Used}: Python, pyspark, fbProphet, scikit, Tableau Server(TabPy)}
+        
+        \resumeItem{\textbf{Advanced Automation Platform:} Built an enterprise-ready micro-service, event-driven architecture on AWS for intelligent automation of claim handling and deployed in production, reducing manual work by 42k hours/year for fortune 50 automobile insurer in the US }
+        
+        {\textit{Technology Used}: Python, SQL, sqlalchemy, Terraform, CI/CD - Gitops, AWS - lambda, SQS, DynamoDB, Secrets Manager, S3, Step Functions}
+        
+        \resumeItem{\textbf{Natural Language Processing:} Deployed NLP framework for analyzing regulatory compliance documents and identified gaps with existing controls as REST API for real-time prediction, delivering \$12MM cost savings/year}
+        
+        {\textit{Technology Used}: Python, Flask, Logistic Regression, Random Forest, Gaussian MM, Latent Dirichlet Allocation, scikit-learn, spaCy (Entity Recognition) }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Affine Analytics}{Feb. 2016 -- Jul. 2018}
+      {Senior Data Scientist, Managing Consultant}{Bangalore, India}
+      \resumeItemListStart
+       \resumeItem{\textbf{Search Experience:} Implemented Statistical, hypothesis, and A/B testing for a leading search engine in Ads Display, improving Revenue/Page by 0.5-1\%. Analyzed experiment sensitivity and implementation practicality. Formulated metrics to measure usability and total impact. Scripted optimized SQL queries to handle 500GB of data a day by analyzing Query Plans and pulled information from over 20 data sources to study user search behavior. Collaborated with stakeholders for influencing product decisions}
+        
+        {\textit{Technology Used}: Python, PowerBI, Excel, Microsoft Cosmos BigData(SQL), PowerPoint}
+        
+        \resumeItem{\textbf{Proof of Concept Solutioning:} Collaborated cross-function with leadership, product, engineering, and sales to develop Proof of Concepts by identifying trends in Retail and Tech Domain. Converted two fortune 500 clients adding revenue of \$1.5 MM}
+        
+        {\textit{Technology Used}: Python, Azure, PowerPoint, draw.io, Tableau}
+      
+        \resumeItem{\textbf{Market Mix Optimization:} Developed a non-linear multiplicative model to optimize the marketing budget for a leading fitness tracker by handling over 10 data sources, increasing ROI by 8.3\%. Built a scenario optimizer for budget planning}
+        
+        {\textit{Technology Used}: Python, Excel Solver}
+        
+        \resumeItem{\textbf{Retail Pricing Optimization:} Deployed ML model for optimizing clearance markdown using Price Elasticity and spearheaded adoption across 400\+ retail stores improving revenue by 7-9\%}
+        
+        {\textit{Technology Used}: Python, pyspark, Teradata (SQL), Scipy Optimization}
+
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Mu Sigma}{Jan. 2013 -- May 2014}
+      {Trainee Decision Scientist}{Bangalore, India}
+      \resumeItemListStart
+       \resumeItem{\textbf{Retail Pricing Strategy:} Generated \$30 MM across 1500+ stores for a leading fortune 100 retailer. Formulated metrics and performed clustering to identify price increment opportunities using national average, competitor presence, and customer price sensitivity. Built real-time dashboards to monitor and report impact to CEO}
+        
+        {\textit{Technology Used}:  Python, SQL, Hadoop, K-means, Tableau Server}
+        
+         \resumeItem{\textbf{Dashboard Automation Workflow:} Identified automation opportunities using in-house workflow and NLP for product description similarity, reducing manual intervention by 65\% (\$ 1MM savings/year). Delivered impact to C-executives in QBR}
+        
+        {\textit{Technology Used}: Python, SQL, NLP(TF-IDF, Cosine Similarity), Tableau Server}
+        
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Master of Information Systems Management; GPA: 3.79}{Aug. 2018 -- Aug. 2019}
+    \resumeSubheading
+      {Visvesvaraya Technological University}{Bangalore, India}
+      {Bachelor of Industrial Engineering and Management; GPA: 3.90}{Sep. 2010 -- May 2014}
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------
+\section{Awards}
+\resumeItemListStart
+    \resumeItem{\textbf{Idea Award at IBM:} Most Impact on Society and the World for Financial Services through Analytics}
+    
+    \resumeItem{\textbf{Most Innovative Award at CMU:} Code4Pennsylvania Hackathon on Opioid crisis}
+
+    \resumeItem{\textbf{Most Practical and Innovative Award from Flipkart:} International Gridlock Hackathon on using advanced analytics to ease city traffic}
+  \resumeItemListEnd
+  
+%-----------ENTREPRENEURSHIP-----------
+\section{Entrepreneurship}
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {Owl\'s Nest}{Jul. 2014 -- Sep. 2015}
+      {CoFounder}{Bangalore, India}
+      \resumeItemListStart
+       \resumeItem{\textbf{Midnight Food Delivery Service:} First of its kind midnight food delivery service turning \$5K in revenue in 2 months}
+      \resumeItemListEnd
+        \resumeSubHeadingListEnd
+  
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, VBA} \\
+     \textbf{Tools and Skills}{: Data Science, Machine Learning, Analytics, Data Visualization, Deep Learning, Statistics, Data Mining, Terraform, spaCy, Spark, Tableau, GIT, MS-Excel, Docker, PyCharm, Eclipse} \\
+     \textbf{Statistics}{:Statistical Testing,  Hypothesis Testing, A/B Experimental Testing }\\
+     \textbf{Databases}{: Postgres, AWS-DynamoDB, AWS-RDS, MySQL, SQL Server}\\
+     \textbf{Cloud}{: AWS, Azure, IBM Cloud} \\
+     \textbf{Visualiztions}{: Tableau, PowerBI, AWS Dashboarding}\\
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
